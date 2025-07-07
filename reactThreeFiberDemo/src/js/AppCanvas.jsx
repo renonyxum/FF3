@@ -6,7 +6,7 @@ import { JEELIZFACEFILTER, NN_4EXPR } from 'facefilter'
 
 // import THREE.js helper, useful to compute pose
 // The helper is not minified, feel free to customize it (and submit pull requests bro):
-import { JeelizThreeFiberHelper } from '../contrib/faceFilter/JeelizThreeFiberHelper.js'
+import { JeelizThreeFiberHelper } from './contrib/faceFilter/JeelizThreeFiberHelper.js'
 
 
 const _maxFacesDetected = 1 // max number of detected faces
@@ -43,7 +43,7 @@ const FaceFollower = (props) => {
   return (
     <object3D ref={objRef}>
       <mesh name="mainCube">
-        <boxBufferGeometry args={[1, 1, 1]} />
+        <boxGeometry args={[1, 1, 1]} />
         <meshNormalMaterial />
       </mesh>
 
@@ -193,7 +193,6 @@ const AppCanvas = () => {
       gl={{
         preserveDrawingBuffer: true // allow image capture
       }}
-      updateDefaultCamera = {false}
       >
         <ThreeGrabber sizing={sizing} />
         <FaceFollower faceIndex={0} expression={_expressions[0]} />

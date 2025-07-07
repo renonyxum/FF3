@@ -79,7 +79,7 @@ Here are the main features of the library:
   * `NN_<xxx>.json`: alternative neural network models,
 * `/helpers/`: scripts which can help you to use this library in some specific use cases,
 * `/libs/`: 3rd party libraries and 3D engines used in the demos,
-* `/reactThreeFiberDemo/`: NPM/React/Webpack/Three-Fiber boilerplate.
+* `/reactThreeFiberDemo/`: NPM/React/Vite/Three-Fiber boilerplate.
 
 
 ## Demonstrations and apps
